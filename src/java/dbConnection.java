@@ -31,7 +31,7 @@ public class dbConnection extends HttpServlet {
             Connection con = null;
 
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://cs2.bradley.edu:3306/books_ashrivastava2", "ashrivastava2", "mgynewuh");
+            con = DriverManager.getConnection("jdbc:mysql://cs2.bradley.edu:3306/books_ashrivastava2", "username", "password");
 
             //String n=request.getParameter("userName");  
             out.print("Welcome  " + con);
@@ -99,7 +99,7 @@ public class dbConnection extends HttpServlet {
             //connection code
             Connection con = null;
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://cs2.bradley.edu:3306/books_ashrivastava2", "ashrivastava2", "mgynewuh");
+            con = DriverManager.getConnection("jdbc:mysql://cs2.bradley.edu:3306/books_ashrivastava2", "username", "password");
 
             //connection session post method
             HttpSession session = request.getSession();
