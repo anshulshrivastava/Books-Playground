@@ -45,33 +45,12 @@ public class dbQuery extends HttpServlet {
 
             String keyword = (String) session.getAttribute("keyword");
 
-            
-            
             String tablename = (String) session.getAttribute("tablename");
             String columnname = (String) session.getAttribute("columnname");
             
             String operator = (String) session.getAttribute("operator");
             String operatorvalue = (String) session.getAttribute("operatorvalue");
-            
-            
-            
-             
-             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
             //HTML output....
             response.setContentType("text/html");
             PrintWriter out = response.getWriter();
@@ -211,17 +190,8 @@ public class dbQuery extends HttpServlet {
 
             out.println("</html></body>");
 
-            
-            
-            
             //sql update function
-            
-            
-            
-            
-            
-            
-            
+
             out.close();
         } catch (Exception e) {
             System.out.println(e);
